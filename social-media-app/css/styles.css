@@ -1,0 +1,152 @@
+header{
+    background-color: rgb(158, 193, 158);
+    padding: 10px;
+    height: 50px;
+}
+
+nav a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#logoutBtn{
+    background-color: rgb(123, 151, 123);
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    float: right;
+    cursor: pointer;
+    color: black;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    letter-spacing: 1px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+
+nav a.active{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(158, 193, 158);
+    margin-top: 40px;
+    color: black;
+}
+
+#createPostForm{
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#createPostForm textarea, #createPostForm input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#createPostForm button{
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(158, 193, 158);
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#searchInput{
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+}
+
+#posts{
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#posts .delete-btn, #posts .edit-btn{
+    background-color: rgb(158, 193, 158);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    color: black;
+}
+
+#profile, #userPosts, #loginForm, #registerForm{
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+#loginForm input, #registerForm input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#loginForm button, #registerForm button{
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(158, 193, 158);
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#followToggleBtn{
+    background-color: rgb(158, 193, 158);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: black;
+}
