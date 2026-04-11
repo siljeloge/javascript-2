@@ -97,10 +97,9 @@ function displayPosts(posts) {
   const container = document.querySelector("#posts");
   const currentUser = localStorage.getItem("user");
 
-
   container.innerHTML = "";
 
-  // If no posts found, show a message
+  // If no posts are found, show a message
   if (!posts.length) {
     container.innerHTML = "<p>No posts found.</p>";
     return;

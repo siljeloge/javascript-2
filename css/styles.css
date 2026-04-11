@@ -12,13 +12,16 @@ nav a{
     cursor: pointer;
 }
 
+nav a.active{
+    text-decoration: underline;
+    font-weight: 600;
+}
+
 #logoutBtn{
     background-color: rgb(123, 151, 123);
-    color: white;
-    border: none;
     font-size: 20px;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 5px black;
     float: right;
     cursor: pointer;
     color: black;
@@ -27,7 +30,6 @@ nav a{
 body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f0f0f0;
-    letter-spacing: 1px;
 }
 
 h1{
@@ -36,11 +38,6 @@ h1{
     font-size: 40px;
     letter-spacing: 2px;
     font-weight: lighter;
-}
-
-nav a.active{
-    text-decoration: underline;
-    font-weight: bold;
 }
 
 footer{
