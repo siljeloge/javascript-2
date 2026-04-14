@@ -3,19 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Post - Social Media</title>
+    <title>Feed - Social Media</title>
+    <link rel="icon" href="images/social_media_app.png" type="image/png">
     <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
-      <nav>
-        <a href="profile.html">Profile</a>
-        <a href="index.html">Feed</a>
-        <a href="login.html">Login</a>
-        <a href="register.html">Register</a>
-        <button id="logoutBtn">Logout</button>
-      </nav>
-    </header>
+  <div class="nav-container">
+    <img src="images/social_media_app.png" alt="Social Media App" class="logo">
+    <nav>
+      <a href="index.html" class="active">Feed</a>
+      <a href="profile.html">Profile</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+    </nav>
+    <button id="logoutBtn">Logout</button>
+  </div>
+</header>
     <h1>Post</h1>
     <div id="post"></div>
     <footer>

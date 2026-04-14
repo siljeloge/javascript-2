@@ -1,13 +1,45 @@
-header{
-    background-color: rgb(158, 193, 158);
-    padding: 10px;
-    height: 50px;
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
 }
 
-nav a{
-    margin: 0 10px;
+header {
+    background-color: rgb(158, 193, 158);
+    padding: 10px 40px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 70px;
+    margin: auto 0;
+    width: auto;
+    display: block;
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex: 1;
+}
+
+nav a,
+#logoutBtn {
     text-decoration: none;
-    color: black;
+    color: white;
+    padding: 20px 40px;
+    background-color: rgb(158, 193, 158);
+    margin-top: auto;
+    border: none;
+    border-radius: 5px;
     font-size: 20px;
     cursor: pointer;
 }
@@ -17,27 +49,27 @@ nav a.active{
     font-weight: 600;
 }
 
-#logoutBtn{
-    background-color: rgb(123, 151, 123);
-    font-size: 20px;
-    padding: 10px 20px;
-    border-radius: 5px black;
-    float: right;
-    cursor: pointer;
-    color: black;
+nav a:hover, #logoutBtn:hover{
+    color: #313131;
 }
 
-body{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f0f0;
+#followToggleBtn:hover, #posts .delete-btn:hover, #posts .edit-btn:hover, #createPostForm button:hover, #loginForm button:hover, #registerForm button:hover{
+    color: #ccc;
+    background-color: rgb(132, 156, 132);
 }
 
 h1{
     text-align: center;
     margin-top: 20px;
     font-size: 40px;
-    letter-spacing: 2px;
-    font-weight: lighter;
+    color: black;
+}
+
+h2{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    color: black;
 }
 
 footer{
@@ -48,33 +80,26 @@ footer{
     color: black;
 }
 
-#createPostForm{
+#createPostForm, #posts, #profile, 
+#userPosts, #loginForm, #registerForm, #post{
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
     background-color: white;
     border-radius: 5px;
+    text-align: center;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 #createPostForm textarea, #createPostForm input[type="text"]{
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     text-align: center;
-}
-
-#createPostForm button{
-    width: 100%;
-    padding: 10px;
-    background-color: rgb(158, 193, 158);
-    border: none;
-    border-radius: 5px;
-    color: black;
-    font-weight: bold;
-    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
 }
 
 #searchInput{
@@ -85,15 +110,8 @@ footer{
     border: 1px solid #ccc;
     border-radius: 5px;
     display: block;
-}
-
-#posts{
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 #posts .delete-btn, #posts .edit-btn{
@@ -108,16 +126,6 @@ footer{
     color: black;
 }
 
-#profile, #userPosts, #loginForm, #registerForm{
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    text-align: center;
-}
-
 #loginForm input, #registerForm input{
     width: 100%;
     padding: 10px;
@@ -126,7 +134,8 @@ footer{
     border-radius: 5px;
 }
 
-#loginForm button, #registerForm button{
+#loginForm button, #registerForm button, 
+#createPostForm button, #followToggleBtn{
     width: 100%;
     padding: 10px;
     background-color: rgb(158, 193, 158);
@@ -137,13 +146,21 @@ footer{
     cursor: pointer;
 }
 
-#followToggleBtn{
-    background-color: rgb(158, 193, 158);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin-top: 20px;
-    cursor: pointer;
-    color: black;
+
+@media (max-width: 600px) {
+    nav a, #logoutBtn{
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    img{
+        height: 150px;
+    }
+
+    #createPostForm, #posts, #profile, #userPosts, 
+    #loginForm, #registerForm, #post, #searchInput{
+        width: 80%;
+        margin: 10px auto;
+    }
+
 }
