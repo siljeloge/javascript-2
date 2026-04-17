@@ -22,7 +22,7 @@ if (form) {
       console.log("Stored token:", localStorage.getItem("token"));
       console.log("Stored apiKey:", localStorage.getItem("apiKey"));
 
-      alert("Login wassuccessful!");
+      alert("Login was successful!");
       window.location.href = "index.html";
     } catch (error) {
       console.error("Login error:", error.message);

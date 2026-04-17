@@ -146,6 +146,27 @@ footer{
     cursor: pointer;
 }
 
+.author-link {
+    color: rgb(97, 118, 97);
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.post-card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.post-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
 
 @media (max-width: 600px) {
     nav a, #logoutBtn{

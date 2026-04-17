@@ -12,6 +12,7 @@ const params = new URLSearchParams(window.location.search);
 const profileName = params.get("name") || localStorage.getItem("user");
 const currentUser = localStorage.getItem("user");
 
+
 async function loadProfilePage() {
   try {
     const profileResult = await getProfile(profileName);

@@ -1,4 +1,4 @@
-// This script handles the index.html of the social media app, including displaying posts, 
+// This script handles the index.html, including displaying posts, 
 // creating new posts, searchbar, and handling user interactions like editing and deleting posts.
 
 import { getPosts, createPost, updatePost, deletePost } from "./api/posts.js";
@@ -67,7 +67,6 @@ if (searchInput) {
       const body = post.body?.toLowerCase() || "";
       const author = post.author?.name?.toLowerCase() || "";
 
-      // Check if the search value is included in title, body or author name
 
       return (
         title.includes(searchValue) ||
@@ -76,12 +75,11 @@ if (searchInput) {
       );
     });
 
-// Display the filtered posts 
     displayPosts(filteredPosts);
   });
 }
 
-// Load posts from the API and display them on the page
+// Load the posts from the API and display them on the page
 async function loadPosts() {
   try {
     const result = await getPosts();
@@ -99,11 +97,12 @@ function displayPosts(posts) {
 
   container.innerHTML = "";
 
-  // If no posts are found, show a message
   if (!posts.length) {
-    container.innerHTML = "<p>No posts found.</p>";
+    container.innerHTML = "<p>No posts were found.</p>";
     return;
   }
+
+  // Create a card for each post and add event listeners for interactions
 
   posts.forEach((post) => {
     const postElement = document.createElement("div");
@@ -146,7 +145,7 @@ function displayPosts(posts) {
       });
     }
 
-    // Edit post and delete post on your own posts
+    // Edit your own post 
 
     if (editBtn) {
       editBtn.addEventListener("click", async (event) => {
@@ -168,7 +167,7 @@ function displayPosts(posts) {
       });
     }
 
-    // Delete post with confirmation
+    // Delete your own post with confirmation
     if (deleteBtn) {
       deleteBtn.addEventListener("click", async (event) => {
         event.stopPropagation();
@@ -191,5 +190,4 @@ function displayPosts(posts) {
   });
 }
 
-// Initial load of posts
 loadPosts();

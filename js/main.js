@@ -1,5 +1,5 @@
 // This script handles user registration by capturing the form input and 
-// sending it to the backend API.
+// sending it to the API.
 
 import { registerUser } from "./api/auth.js";
 

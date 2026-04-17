@@ -9,7 +9,6 @@ if (logoutBtn) {
   } else {
     logoutBtn.style.display = "block";
 
-    // Clear localStorage and redirect to login page after clicking the logout button
 
     logoutBtn.addEventListener("click", () => {
       localStorage.clear();

@@ -35,7 +35,7 @@ export async function getProfile(name) {
 }
 
 /**
- * Fetch all the posts by a specific user
+ * Fetch all the posts made by a specific user
  * @param {string} name
  * @returns {Promise<object>}
  */
